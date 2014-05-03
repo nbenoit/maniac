@@ -1,0 +1,21 @@
+2011-02-21 Nicolas BENOIT <nbenoit@tuxfamily.org>
+
+	* README, doc/manual.tm: 1.0.1 release
+
+
+2011-02-21 Nicolas BENOIT <nbenoit@tuxfamily.org>
+
+	* doc/manual.tm: added an example of program description.
+	* doc/manual.tm: fixed a few typo and presentation issues.
+
+
+2011-02-15 Nicolas BENOIT <nbenoit@tuxfamily.org>
+
+	* maniac.py: fixed generator's path building.
+	* maniac.py: improved compatiblity with Python 3.
+	* maniac.py: added licensing and copyright infos.
+
+
+2011-01-30 Nicolas BENOIT <nbenoit@tuxfamily.org>
+
+	* README, doc/manual.tm: 1.0 release.

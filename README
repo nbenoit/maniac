@@ -1,0 +1,28 @@
+	Maniac release 1.0
+
+These are the release notes for Maniac version 1.0
+Read them carefully, as they tell you what this is all about.
+
+
+WHAT IS MANIAC ?
+
+ Maniac is a tool designed to automate the comparison and the validation of
+ multiple variants of a same program. This is achieved by compiling
+ each variant separately and then generating a program that will successively
+ load and execute them.
+
+ Maniac is a free software, it is licensed under the GNU GPL.
+ Have a look at the `COPYING' file for details.
+
+ In order to run Maniac, you need Python 2.6 or above.
+
+
+HOW TO INSTALL ?
+
+ Instructions to install Maniac are details in the `INSTALL' file.
+
+
+HOW TO RUN ?
+
+ Once you have installed the program, you should be able to run it by
+ invoking `maniac' into one of the provided demos directories.

@@ -1,0 +1,12 @@
+ Maniac 1.0.1:
+===============
+
+   - Fixed a bug with the building of generator's relative path.
+   - Fixed a few issues with the documentation.
+   - Added licensing and copyright infos where it was missing.
+
+
+ Maniac 1.0:
+===============
+
+   - First release of Maniac.

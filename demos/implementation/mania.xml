@@ -1,0 +1,16 @@
+<mania>
+  <variants>
+    <variant name="paired" gen="none" />
+  </variants>
+  <plans>
+    <plan name="time" default="true">
+      <variants>
+        <variant name="ref" time="true" compflags="-O3 -s -march=native" />
+        <variant name="paired" time="true" compflags="-O3 -s -march=native" />
+      </variants>
+    </plan>
+  </plans>
+  <program name="syracuse" ext="c">
+    <entry name="mania_entry" />
+  </program>
+</mania>

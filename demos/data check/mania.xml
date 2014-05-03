@@ -1,0 +1,19 @@
+<mania>
+  <variants>
+    <variant name="buggy" gen="none" />
+  </variants>
+  <plans>
+    <plan name="time" default="true">
+      <variants>
+        <variant name="ref" compflags="-O3 -s -march=native" />
+        <variant name="buggy" compflags="-O3 -s -march=native" />
+      </variants>
+    </plan>
+  </plans>
+  <program name="syracuse" ext="c">
+    <entry name="mania_entry" />
+    <data>
+      <array type="unsigned int" name="array" dims="[111]" ini="true" value="rand" chk="true" />
+    </data>
+  </program>
+</mania>

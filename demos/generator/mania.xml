@@ -1,0 +1,58 @@
+<mania>
+  <generators>
+    <generator name="pocc-tile" bin="pocc" flags="--pluto --pluto-tile -o %prog%-tile.c --quiet" />
+    <generator name="pocc-unroll" bin="pocc" flags="--pluto --pluto-unroll -o %prog%-unroll.c --quiet">
+      <cleans>
+        <clean files="parsetab.py" />
+      </cleans>
+    </generator>
+
+    <generator name="pocc-tile+unroll" bin="pocc" flags="--pluto --pluto-tile --pluto-unroll -o %prog%-tile+unroll.c --quiet">
+      <cleans>
+        <clean files="parsetab.py" />
+      </cleans>
+    </generator>
+  </generators>
+
+  <variants>
+    <variant name="tile" gen="pocc-tile" />
+    <variant name="unroll" gen="pocc-unroll" />
+    <variant name="tile+unroll" gen="pocc-tile+unroll" />
+  </variants>
+
+  <plans>
+    <plan name="test" default="true">
+      <variants>
+        <variant name="ref" />
+        <variant name="tile" />
+        <variant name="unroll" />
+        <variant name="tile+unroll" />
+      </variants>
+    </plan>
+    <plan name="time">
+      <variants>
+        <variant name="ref" time="true" compflags="-O3 -s -march=native -lm" />
+        <variant name="tile" time="true" compflags="-O3 -s -march=native -lm" />
+        <variant name="unroll" time="true" compflags="-O3 -s -march=native -lm" />
+        <variant name="tile+unroll" time="true" compflags="-O3 -s -march=native -lm" />
+      </variants>
+    </plan>
+  </plans>
+
+  <program name="gemver" ext="c">
+    <entry name="gemver">
+      <data>
+        <array type="double" name="A" dims="[4096,4096]" ini="true" value="index" chk="true" />
+        <array type="double" name="u1" dims="[4096]" ini="true" value="index/12.0" chk="true" />
+        <array type="double" name="v1" dims="[4096]" ini="true" value="index/44.0" chk="true" />
+        <array type="double" name="u2" dims="[4096]" ini="true" value="index/16.0" chk="true" />
+        <array type="double" name="v2" dims="[4096]" ini="true" value="index/22.0" chk="true" />
+        <array type="double" name="w" dims="[4096]" ini="true" value="index/24.0" chk="true" />
+        <array type="double" name="x" dims="[4096]" ini="true" value="0" chk="true" />
+        <array type="double" name="y" dims="[4096]" ini="true" value="index/32.0" chk="true" />
+        <array type="double" name="z" dims="[4096]" ini="true" value="0" chk="true" />
+      </data>
+    </entry>
+  </program>
+
+</mania>

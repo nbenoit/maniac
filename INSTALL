@@ -1,0 +1,20 @@
+  Maniac installation instructions
+
+These are the installation guidelines for maniac.
+
+
+REQUIREMENTS
+
+ The only dependency on which Maniac relies is the Python interpreted.
+ It is installed by default on most of (GNU)Linux distributions.
+
+
+HOW TO PROCEED
+
+ Well, it's pretty simple, you only have to copy the main script into
+ a bin directory:
+
+ $ cp maniac.py ~/.local/bin/maniac
+ $ sudo cp maniac.py /usr/bin/maniac
+
+ Or anything like that should do.

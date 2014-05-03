@@ -1,0 +1,18 @@
+<mania>
+  <variants>
+    <variant name="o2" gen="copy" />
+    <variant name="o3" gen="copy" />
+  </variants>
+  <plans>
+    <plan name="time" default="true">
+      <variants>
+        <variant name="ref" time="true" compflags="-O1 -s -march=native" />
+        <variant name="o2" time="true" compflags="-O2 -s -march=native" />
+        <variant name="o3" time="true" compflags="-O3 -s -march=native" />
+      </variants>
+    </plan>
+  </plans>
+  <program name="syracuse" ext="c">
+    <entry name="mania_entry" />
+  </program>
+</mania>
